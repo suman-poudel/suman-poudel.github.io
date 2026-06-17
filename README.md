@@ -99,7 +99,7 @@ More on my Google Scholar Profile: [Suman Poudel](https://scholar.google.com/cit
 * Conducted nonlinear structural performance analysis of an electric transmission tower under wind loading.
 * Integrated LS-DYNA with OpenSees to perform multi-scale wind-borne debris impact analysis on an electric transmission tower.
 * Developed a machine learning-based surrogate model for LS-DYNA impact analysis.
-* **Advisor:** Dr. Brian D. Giffin
+* **Advisor:** [Dr. Brian D. Giffin](https://bdgiffin.github.io/)
 
 #### Design of Prestressed Concrete Bridge Girders: SH 99 Over Deep Fork
 * Designed straight strand patterns for prestressed concrete bridge girders for SH 99 Over Deep Fork.
@@ -108,11 +108,11 @@ More on my Google Scholar Profile: [Suman Poudel](https://scholar.google.com/cit
 #### Fragility Analysis of a 12-Story Building in OpenSees
 * Designed and analysed a 2D 12-story tall building in OpenSees.
 * Enhanced a program using MATLAB and tested it on an official benchmark.
-* **Instructor:** Dr. Maha Kenawy
+* **Instructor:** [Dr. Maha Kenawy](https://www.mahakenawy.com/)
 
 #### Machine Learning-Based Surrogate Modelling for Buildings Subject to Earthquake Loading
 * Applied support vector regression, random forest regression, and artificial neural networks to predict the response of a 3-story, 2-dimensional building.
-* **Instructor:** Dr. Maha Kenawy
+* **Instructor:** [Dr. Maha Kenawy](https://www.mahakenawy.com/)
 
 #### Virtual Laboratory for Grokking in Neural Networks
 * Developed a laboratory experiment to help students learn algorithmic and memorisation behaviour in neural network training.
@@ -167,7 +167,7 @@ More on my Google Scholar Profile: [Suman Poudel](https://scholar.google.com/cit
 
 ## References
 
-**Dr. Brian Doran Giffin**  
+**[Dr. Brian Doran Giffin](https://bdgiffin.github.io/)**  
 Assistant Professor  
 Department of Civil and Environmental Engineering, Oklahoma State University  
 **Email:** brian.giffin@okstate.edu
