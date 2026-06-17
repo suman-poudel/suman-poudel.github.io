@@ -27,16 +27,16 @@
 
 ### Graduate Research Assistant | Oklahoma State University
 *Fall 2025 – Spring 2027*  
-* **Advisor:** Dr. Brian D. Giffin  
+* **Advisor:** [Dr. Brian D. Giffin](https://bdgiffin.github.io/)
 
 ### Graduate Teaching Assistant | Oklahoma State University
 *Fall 2025*  
 * **Course:** Strength of Materials  
-* **Instructor:** Dr. Robert Emerson  
+* **Instructor:** [Dr. Robert Emerson](https://experts.okstate.edu/robert.emerson)  
 
 ---
 
-## Honors and Awards
+## Honours and Awards
 
 ### Finalist – Regional 3-Minute Thesis Competition
 *2026*  
@@ -68,7 +68,9 @@
 * Natural Hazards Engineering  
 * Impact Analysis  
 * Structural Retrofitting  
-* Wind Engineering  
+* Wind Engineering
+* Surrogate Modelling
+* Deep Learning
 
 ---
 
@@ -85,6 +87,7 @@
 * Acharya, A., **Poudel, S.**, & Paudel, S.R., (2024). Bacterial and fungal mechanism of plastic degradation. *Environmental Hazards of Plastic Wastes*. [https://doi.org/10.1016/B978-0-443-23599-3.00015-0](https://doi.org/10.1016/B978-0-443-23599-3.00015-0) (Published)
 * Kc, M., Baniya, S., **Poudel, S.**, & Paudel, S. R., (2024). Role of earthworms in the degradation of microplastics. *Environmental Hazards of Plastic Wastes*. [https://doi.org/10.1016/B978-0-443-23599-3.00016-2](https://doi.org/10.1016/B978-0-443-23599-3.00016-2) (Published)
 
+More on my Google Scholar Profile: [Suman Poudel](https://scholar.google.com/citations?user=CqsGOQgAAAAJ&hl=en&oi=ao)
 ---
 
 ## Academic Projects
@@ -103,22 +106,22 @@
 * **Instructor:** Dr. Bruce Russell
 
 #### Fragility Analysis of a 12-Story Building in OpenSees
-* Designed and analyzed a 2D 12-story tall building in OpenSees.
+* Designed and analysed a 2D 12-story tall building in OpenSees.
 * Enhanced a program using MATLAB and tested it on an official benchmark.
 * **Instructor:** Dr. Maha Kenawy
 
-#### Machine Learning-Based Surrogate Modeling for Buildings Subject to Earthquake Loading
+#### Machine Learning-Based Surrogate Modelling for Buildings Subject to Earthquake Loading
 * Applied support vector regression, random forest regression, and artificial neural networks to predict the response of a 3-story, 2-dimensional building.
 * **Instructor:** Dr. Maha Kenawy
 
 #### Virtual Laboratory for Grokking in Neural Networks
-* Developed a laboratory experiment to help students learn algorithmic and memorization behavior in neural network training.
+* Developed a laboratory experiment to help students learn algorithmic and memorisation behaviour in neural network training.
 * **Instructor:** Dr. Martin Hagan
 
 ### Undergraduate Projects (2019 – 2024)
 
 #### Seismic Vulnerability Evaluation and Retrofitting of Existing RCC Structure (Thesis)
-* Designed a 5-story tall institutional building in ETABS, analyzed the seismic vulnerability, and simulated the performance of the building under beam-column jacketing as a retrofitting method.
+* Designed a 5-story tall institutional building in ETABS, analysed the seismic vulnerability, and simulated the performance of the building under beam-column jacketing as a retrofitting method.
 
 #### Concrete Crack Detection Using CNN Model
 * Developed a Convolutional Neural Network (CNN) model capable of detecting concrete cracks directly from images.
@@ -127,7 +130,7 @@
 
 ## Skills
 
-* **Programming Languages:** MATLAB, C, C++, Python  
+* **Programming Languages:** MATLAB, C, C++, Python, OpenSees
 * **Software Skills:** LS-DYNA, ANSYS, ETABS, SAP2000, AutoCAD, Civil 3D, ArcGIS, DIANA, Illustrator  
 
 ---
@@ -152,9 +155,9 @@
 *May 2026*  
 * Presented research titled *“Quantifying the Contribution of Wind-borne Debris Impact to Structural Failure through Multi-scale Modeling of Transmission Infrastructure”*.
 
-### President – Chi Epsilon: OSU Chapter (National Honor Society for Civil Engineers)
+### President – Chi Epsilon: OSU Chapter (National Honour Society for Civil Engineers)
 *2025*  
-* Organized graduate student presentations and career fair preparation sessions featuring a company panel.
+* Organised graduate student presentations and career fair preparation sessions featuring a company panel.
 
 ### Student Member
 *2024*  
