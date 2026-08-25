@@ -1,7 +1,6 @@
 # Suman Poudel
 
 **Address:** Apt #25, The Village, 808 N Monroe Street, Stillwater, Oklahoma, USA  
-**Phone:** +1 (405) 269-1792  
 **Email:** poudelsuman44@gmail.com | suman.poudel@okstate.edu  
 **Website:** [suman-poudel.github.io](https://suman-poudel.github.io)  
 **Google Scholar:** [Suman Poudel](https://scholar.google.com/citations?user=CqsGOQgAAAAJ&hl=en&oi=ao)  
