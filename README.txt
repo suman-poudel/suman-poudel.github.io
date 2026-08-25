@@ -1,0 +1,1 @@
+Upload all HTML files and style.css to the root of your GitHub Pages repository. Navigation now opens a separate HTML page for every section. Put CV.pdf beside cv.html for the CV button to work.
