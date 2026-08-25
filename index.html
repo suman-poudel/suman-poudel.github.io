@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Academic website of Suman Poudel, M.S. Civil Engineering student at Oklahoma State University. Research in structural engineering, natural hazards, wind engineering, impact analysis, surrogate modeling, and deep learning.">
+<title>Suman Poudel | Structural Engineering & Natural Hazards</title>
+<style>
+:root{
+  --bg:#f7f8fa; --surface:#fff; --text:#17202a; --muted:#5f6b76;
+  --accent:#174a7e; --accent2:#0f3559; --border:#e3e7eb;
+  --max:1120px; --shadow:0 8px 30px rgba(20,35,50,.07);
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+html{scroll-padding-top:76px}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:var(--bg);line-height:1.7}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.nav{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.nav-inner{max-width:var(--max);margin:auto;display:flex;align-items:center;justify-content:space-between;min-height:70px;padding:0 22px}
+.brand{font-weight:800;font-size:1.1rem;color:var(--text)}
+.menu{display:flex;gap:4px;align-items:center;flex-wrap:wrap}
+.menu a{padding:9px 11px;color:#3f4b56;font-size:.9rem;border-radius:8px}
+.menu a:hover{background:#eef3f8;text-decoration:none;color:var(--accent)}
+.menu-toggle{display:none;border:0;background:none;font-size:1.5rem;cursor:pointer}
+.container{max-width:var(--max);margin:auto;padding:0 22px}
+.hero{background:linear-gradient(135deg,#eef4fa,#fff);border-bottom:1px solid var(--border)}
+.hero-inner{min-height:560px;display:flex;align-items:center;padding:80px 22px}
+.hero h1{font-size:clamp(2.5rem,6vw,4.7rem);line-height:1.05;margin:0 0 18px;letter-spacing:-.04em}
+.hero .subtitle{font-size:1.3rem;color:var(--accent);font-weight:700;margin-bottom:18px}
+.hero p{max-width:780px;font-size:1.08rem;color:var(--muted)}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:11px 18px;border-radius:8px;border:1px solid var(--accent);font-weight:700}
+.btn.primary{background:var(--accent);color:white}
+.btn.secondary{background:white;color:var(--accent)}
+section{padding:82px 0;border-bottom:1px solid var(--border)}
+.section-title{font-size:2rem;line-height:1.2;margin:0 0 12px}
+.section-intro{color:var(--muted);max-width:780px;margin:0 0 35px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:24px;box-shadow:var(--shadow)}
+.card h3{margin:0 0 6px;font-size:1.15rem}
+.card h4{margin:18px 0 5px}
+.meta{color:var(--muted);font-size:.94rem}
+.tag{display:inline-block;background:#edf3f8;color:var(--accent2);padding:5px 10px;border-radius:999px;font-size:.82rem;margin:4px 4px 4px 0}
+.timeline{border-left:2px solid #cdd9e4;margin-left:8px;padding-left:25px}
+.timeline-item{position:relative;margin-bottom:32px}
+.timeline-item:before{content:"";position:absolute;left:-32px;top:8px;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+.pub{padding:20px 0;border-bottom:1px solid var(--border)}
+.pub:last-child{border-bottom:0}
+.pub strong{color:var(--text)}
+ul{padding-left:22px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:35px 0}
+.stat{background:white;border:1px solid var(--border);padding:20px;text-align:center;border-radius:10px}
+.stat .num{display:block;font-size:1.7rem;font-weight:800;color:var(--accent)}
+footer{background:#17202a;color:#d9e0e6;padding:45px 0}
+footer a{color:#b9d5ee}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.small{font-size:.9rem;color:var(--muted)}
+@media(max-width:850px){
+  .menu-toggle{display:block}.menu{display:none;position:absolute;top:70px;left:0;right:0;background:white;border-bottom:1px solid var(--border);padding:12px 20px}
+  .menu.open{display:flex;flex-direction:column;align-items:stretch}.menu a{padding:12px}
+  .grid,.grid.three,.contact-grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}
+  .hero-inner{min-height:auto;padding:70px 22px}
+}
+@media(max-width:480px){.stats{grid-template-columns:1fr 1fr}.hero h1{font-size:2.7rem}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#home">Suman Poudel</a>
+    <button class="menu-toggle" aria-label="Open navigation" onclick="toggleMenu()">☰</button>
+    <div class="menu" id="menu">
+      <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a>
+      <a href="#projects">Projects</a><a href="#teaching">Teaching</a><a href="#awards">Awards</a>
+      <a href="#skills">Skills</a><a href="#cv">CV</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="home">
+  <div class="container hero-inner">
+    <div>
+      <div class="subtitle">M.S. Civil Engineering · Structural Engineering</div>
+      <h1>Suman Poudel</h1>
+      <p>I am a civil engineering researcher at Oklahoma State University working at the intersection of structural engineering, natural hazards, computational mechanics, wind engineering, and machine learning.</p>
+      <p>My research focuses on understanding structural performance under extreme hazards and developing computational and data-driven methods for efficient engineering assessment.</p>
+      <div class="actions">
+        <a class="btn primary" href="#research">Explore My Research</a>
+        <a class="btn secondary" href="#publications">View Publications</a>
+        <a class="btn secondary" href="#contact">Contact</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section id="about">
+<div class="container">
+<h2 class="section-title">About Me</h2>
+<p class="section-intro">I am pursuing a Master of Science in Civil Engineering at Oklahoma State University, with a focus on structural engineering and computational methods.</p>
+<div class="stats">
+<div class="stat"><span class="num">4.0/4.0</span>Graduate GPA</div>
+<div class="stat"><span class="num">1st</span>University 3MT</div>
+<div class="stat"><span class="num">12</span>Regional 3MT Finalists</div>
+<div class="stat"><span class="num">321</span>GRE</div>
+</div>
+<div class="grid">
+<div class="card">
+<h3>Education</h3>
+<h4>Oklahoma State University</h4><div class="meta">2025 – Current · M.S. in Civil Engineering · GPA 4.0/4.0</div>
+<h4>Tribhuvan University, Nepal</h4><div class="meta">2020 – 2024 · Bachelor’s in Civil Engineering · 79/100%</div>
+</div>
+<div class="card">
+<h3>Research Interests</h3>
+<span class="tag">Performance-Based Design</span><span class="tag">Natural Hazards Engineering</span><span class="tag">Impact Analysis</span><span class="tag">Structural Retrofitting</span><span class="tag">Wind Engineering</span><span class="tag">Surrogate Modelling</span><span class="tag">Deep Learning</span>
+</div>
+</div>
+</div>
+</section>
+
+<section id="research">
+<div class="container">
+<h2 class="section-title">Research</h2>
+<p class="section-intro">My work combines high-fidelity structural simulation, hazard engineering, and machine learning to study infrastructure performance under extreme loading.</p>
+<div class="card">
+<h3>Wind-borne Debris Impact to Transmission Infrastructure</h3>
+<div class="meta">Graduate Thesis · Oklahoma State University · Advisor: Dr. Brian D. Giffin</div>
+<ul>
+<li>Developed a fine-scale steel angle section in LS-DYNA and performed wind-borne debris impact simulations and member-level fragility analysis.</li>
+<li>Conducted nonlinear structural performance analysis of an electric transmission tower under wind loading.</li>
+<li>Integrated LS-DYNA with OpenSees for multi-scale wind-borne debris impact analysis of transmission infrastructure.</li>
+<li>Developed a machine-learning-based surrogate model for LS-DYNA impact analysis.</li>
+</ul>
+</div>
+<div class="grid three" style="margin-top:22px">
+<div class="card"><h3>Computational Mechanics</h3><p>High-fidelity nonlinear finite-element analysis and impact simulation using LS-DYNA.</p></div>
+<div class="card"><h3>Structural Engineering</h3><p>Member- and system-level assessment of transmission infrastructure under extreme wind and debris loading.</p></div>
+<div class="card"><h3>Machine Learning</h3><p>Surrogate models designed to accelerate computationally intensive engineering simulations.</p></div>
+</div>
+</div>
+</section>
+
+<section id="publications">
+<div class="container">
+<h2 class="section-title">Publications</h2>
+<p class="section-intro">Selected journal articles and book chapters. See my <a href="https://scholar.google.com/citations?user=CqsGOQgAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar profile</a> for the latest publication record.</p>
+<div class="card">
+<h3>Journal Articles</h3>
+<div class="pub"><strong>Poudel, S.</strong>, & Shrestha, K. C. (2026). Seismic vulnerability assessment and retrofitting of code non-compliant mixed masonry-RC residential building. <em>Advances in Structural Engineering</em>, 13694332261415682. <a href="https://doi.org/10.1177/13694332261415682" target="_blank">DOI</a>.</div>
+<div class="pub">Paneru, B., Paneru, B., Upadhyay, P., <strong>Poudel, S.</strong>, Giri, T., & Poudyal, K. N. (2026). Forecast of CO2 and methanol production capacity of European Union using machine learning approach. <em>Chemical Engineering and Processing - Process Intensification</em>, 222, 110748. <a href="https://doi.org/10.1016/j.cep.2026.110748" target="_blank">DOI</a>.</div>
+<div class="pub">Banjara, I. P., <strong>Poudel, S.</strong>, Pariyar, K., Upreti, D., Zafeirakou, A., & Paudel, S. R. (2025). AI for Enhanced Water Quality Data Imputation: A Deep Learning Perspective. <em>Environmental Science: Advances</em>. <a href="https://doi.org/10.1039/D4VA00367E" target="_blank">DOI</a>.</div>
+<div class="pub"><strong>Poudel, S.</strong>, Shrestha, A., Kandel, N., Adhikari, S., & Paudel, S. R. (2023). A review of reclaimed water reuse for irrigation in South Asian countries. <em>ACS ES&T Water</em>, 3(12), 3790–3806. <a href="https://doi.org/10.1021/acsestwater.3c00487" target="_blank">DOI</a>.</div>
+<h3 style="margin-top:30px">Book Chapters</h3>
+<div class="pub"><strong>Poudel, S.</strong>, Baniya, S., Zafirakou, A., Angove, M., & Paudel, S. R. (2026). Implementing machine learning solutions in hydrogen projects. <a href="https://doi.org/10.1016/B978-0-443-34090-1.00018-X" target="_blank">DOI</a>.</div>
+<div class="pub">Acharya, A., <strong>Poudel, S.</strong>, & Paudel, S.R. (2024). Bacterial and fungal mechanism of plastic degradation. <em>Environmental Hazards of Plastic Wastes</em>. <a href="https://doi.org/10.1016/B978-0-443-23599-3.00015-0" target="_blank">DOI</a>.</div>
+<div class="pub">Kc, M., Baniya, S., <strong>Poudel, S.</strong>, & Paudel, S. R. (2024). Role of earthworms in the degradation of microplastics. <em>Environmental Hazards of Plastic Wastes</em>. <a href="https://doi.org/10.1016/B978-0-443-23599-3.00016-2" target="_blank">DOI</a>.</div>
+</div>
+</div>
+</section>
+
+<section id="projects">
+<div class="container">
+<h2 class="section-title">Projects</h2>
+<div class="grid">
+<div class="card"><h3>Wind-borne Debris Impact to Transmission Infrastructure</h3><div class="meta">Graduate Thesis · 2025–2026</div><p>LS-DYNA impact simulation, transmission tower analysis, multi-scale LS-DYNA/OpenSees modeling, fragility analysis, and ML surrogate modeling.</p></div>
+<div class="card"><h3>Design of Prestressed Concrete Bridge Girders: SH 99 Over Deep Fork</h3><p>Designed straight strand patterns for prestressed concrete bridge girders.</p><div class="meta">Instructor: Dr. Bruce Russell</div></div>
+<div class="card"><h3>Fragility Analysis of a 12-Story Building in OpenSees</h3><p>Designed and analysed a 2D 12-story building and enhanced a MATLAB program tested on an official benchmark.</p><div class="meta">Instructor: Dr. Maha Kenawy</div></div>
+<div class="card"><h3>ML-Based Surrogate Modelling for Buildings Subject to Earthquake Loading</h3><p>Applied support vector regression, random forest regression, and artificial neural networks to predict response of a 3-story, 2D building.</p><div class="meta">Instructor: Dr. Maha Kenawy</div></div>
+<div class="card"><h3>Virtual Laboratory for Grokking in Neural Networks</h3><p>Developed a laboratory experiment for learning algorithmic and memorisation behaviour in neural network training.</p><div class="meta">Instructor: Dr. Martin Hagan</div></div>
+<div class="card"><h3>Seismic Vulnerability Evaluation and Retrofitting of Existing RCC Structure</h3><div class="meta">Undergraduate Thesis · 2019–2024</div><p>Designed a 5-story institutional building in ETABS, evaluated seismic vulnerability, and studied beam-column jacketing as a retrofit method.</p></div>
+<div class="card"><h3>Concrete Crack Detection Using CNN</h3><p>Developed a convolutional neural network model capable of detecting concrete cracks directly from images.</p></div>
+</div>
+</div>
+</section>
+
+<section id="teaching">
+<div class="container">
+<h2 class="section-title">Teaching & Research Experience</h2>
+<div class="timeline">
+<div class="timeline-item"><h3>Graduate Research Assistant · Oklahoma State University</h3><div class="meta">Fall 2025 – Spring 2027 · Advisor: Dr. Brian D. Giffin</div></div>
+<div class="timeline-item"><h3>Graduate Teaching Assistant · Oklahoma State University</h3><div class="meta">Fall 2025 · Strength of Materials · Instructor: Dr. Robert Emerson</div></div>
+</div>
+</div>
+</section>
+
+<section id="awards">
+<div class="container">
+<h2 class="section-title">Honors & Awards</h2>
+<div class="grid">
+<div class="card"><h3>Finalist – Regional 3-Minute Thesis Competition</h3><div class="meta">2026</div><p>Selected as a top 12 finalist out of 65 champions from 65 universities in the Southern USA.</p></div>
+<div class="card"><h3>1st Place – University 3-Minute Thesis Competition</h3><div class="meta">2025</div><p>Secured 1st place university-wide among 110+ participants and represented OSU at the regional competition.</p></div>
+<div class="card"><h3>Top 15% – Department of Civil Engineering</h3><div class="meta">2024</div><p>Ranked in the top 15% among 196 undergraduate students at Pulchowk Campus, Tribhuvan University.</p></div>
+<div class="card"><h3>Tuition Waived Scholarship</h3><div class="meta">2019</div><p>Awarded a full tuition waiver for a Bachelor’s in Civil Engineering based on Tribhuvan University Entrance Exam rank.</p></div>
+<div class="card"><h3>Ranked 11th – Engineering Entrance Examination</h3><div class="meta">2019</div><p>Ranked 11th among 15,000+ applicants. Score: 124/140.</p></div>
+</div>
+</div>
+</section>
+
+<section id="skills">
+<div class="container">
+<h2 class="section-title">Skills</h2>
+<div class="grid">
+<div class="card"><h3>Programming & Computational Tools</h3><p>MATLAB · C · C++ · Python · OpenSees</p></div>
+<div class="card"><h3>Engineering & Design Software</h3><p>LS-DYNA · ANSYS · ETABS · SAP2000 · AutoCAD · Civil 3D · ArcGIS · DIANA · Illustrator</p></div>
+</div>
+<div class="grid" style="margin-top:22px">
+<div class="card"><h3>GRE</h3><p><strong>321/340</strong><br>Quantitative: 162 · Verbal: 159</p></div>
+<div class="card"><h3>TOEFL</h3><p><strong>117/120</strong><br>Reading: 30 · Speaking: 30 · Listening: 30 · Writing: 27</p></div>
+</div>
+</div>
+</section>
+
+<section id="professional">
+<div class="container">
+<h2 class="section-title">Professional Development</h2>
+<div class="grid">
+<div class="card"><h3>Presenter – NHERI Computational Symposium</h3><div class="meta">May 2026</div><p>Presented “Quantifying the Contribution of Wind-borne Debris Impact to Structural Failure through Multi-scale Modeling of Transmission Infrastructure.”</p></div>
+<div class="card"><h3>President – Chi Epsilon, OSU Chapter</h3><div class="meta">2025</div><p>Organised graduate student presentations and career fair preparation sessions featuring a company panel.</p></div>
+<div class="card"><h3>Student Member</h3><div class="meta">2024</div><p>ASCE, Structural Engineers Institute, and NHERI Graduate Student Council.</p></div>
+</div>
+</div>
+</section>
+
+<section id="cv">
+<div class="container">
+<h2 class="section-title">Curriculum Vitae</h2>
+<p class="section-intro">For a complete academic record, publications, projects, experience, and qualifications, download my CV.</p>
+<div class="actions"><a class="btn primary" href="CV.pdf" target="_blank">Download CV (PDF)</a></div>
+<p class="small">Place your PDF in the same GitHub repository and name it <strong>CV.pdf</strong>, or change the filename in the link above.</p>
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+<h2 class="section-title">Contact</h2>
+<p class="section-intro">I welcome conversations about structural engineering, natural hazards, computational mechanics, machine learning, and research opportunities.</p>
+<div class="contact-grid">
+<div class="card"><h3>Email</h3><p><a href="mailto:poudelsuman44@gmail.com">poudelsuman44@gmail.com</a><br><a href="mailto:suman.poudel@okstate.edu">suman.poudel@okstate.edu</a></p></div>
+<div class="card"><h3>Academic Profiles</h3><p><a href="https://scholar.google.com/citations?user=CqsGOQgAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a><br><a href="https://www.linkedin.com/in/suman76/" target="_blank">LinkedIn</a></p></div>
+<div class="card"><h3>Affiliation</h3><p>Oklahoma State University<br>Stillwater, Oklahoma, USA</p></div>
+</div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="container">
+<strong>Suman Poudel</strong>
+<p>Structural Engineering · Natural Hazards · Computational Mechanics · Machine Learning</p>
+<p class="small">© <span id="year"></span> Suman Poudel. All rights reserved.</p>
+</div>
+</footer>
+
+<script>
+function toggleMenu(){
+  document.getElementById('menu').classList.toggle('open');
+}
+document.querySelectorAll('.menu a').forEach(a=>{
+  a.addEventListener('click',()=>document.getElementById('menu').classList.remove('open'));
+});
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
