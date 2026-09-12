@@ -1,229 +1,133 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta
-        name="description"
-        content="Academic website of Suman Poudel"
-    >
-
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1.0" name="viewport" />
+    <meta content="Academic website of Suman Poudel" name="description" />
     <title>Home | Suman Poudel</title>
-
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-    <!-- Navigation -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
     <nav class="nav">
-        <div class="nav-inner">
-
-            <a class="brand" href="index.html">
-                Suman Poudel
-            </a>
-
-            <button
-                class="menu-toggle"
-                aria-label="Open navigation"
-                onclick="toggleMenu()"
-            >
-                ☰
-            </button>
-
-            <div class="menu" id="menu">
-                <a href="about.html">About</a>
-                <a href="research.html">Research</a>
-                <a href="publications.html">Publications</a>
-                <a href="projects.html">Projects</a>
-                <a href="teaching.html">Teaching</a>
-                <a href="awards.html">Awards</a>
-                <a href="skills.html">Skills</a>
-                <a href="professional.html">Professional</a>
-                <a href="cv.html">CV</a>
-                <a href="contact.html">Contact</a>
-            </div>
-
+      <div class="nav-inner">
+        <a class="brand" href="index.html"> Suman Poudel</a>
+        <button
+          aria-label="Open navigation"
+          class="menu-toggle"
+          onclick="toggleMenu()"
+        >
+          ☰
+        </button>
+        <div class="menu" id="menu">
+          <a href="about.html"> About </a>
+          <a href="research.html"> Research </a>
+          <a href="publications.html"> Publications </a>
+          <a href="projects.html"> Projects </a>
+          <a href="experience.html"> Experience </a>
+          <a href="awards.html"> Awards </a>
+          <a href="skills.html"> Skills </a>
+          <a href="professional.html"> Professional </a>
+          <a href="cv.html"> CV </a>
+          <a href="contact.html"> Contact </a>
         </div>
+      </div>
     </nav>
-
-
-    <!-- Main Content -->
     <main>
-
-        <!-- Hero Section -->
-        <header class="hero">
-            <div class="container hero-inner">
-
-                <div>
-
-                    <div class="subtitle">
-                        M.S. Civil Engineering · Structural Engineering
-                    </div>
-
-                    <h1>
-                        Suman Poudel
-                    </h1>
-
-                    <p>
-                        I am a civil engineering researcher at Oklahoma State
-                        University working at the intersection of structural
-                        engineering, natural hazards, computational mechanics,
-                        wind engineering, and machine learning.
-                    </p>
-
-                    <p>
-                        My research focuses on understanding structural
-                        performance under extreme hazards and developing
-                        computational and data-driven methods for efficient
-                        engineering assessment.
-                    </p>
-
-                    <!-- Action Buttons -->
-                    <div class="actions">
-
-                        <a
-                            class="btn primary"
-                            href="research.html"
-                        >
-                            Explore My Research
-                        </a>
-
-                        <a
-                            class="btn secondary"
-                            href="publications.html"
-                        >
-                            View Publications
-                        </a>
-
-                        <a
-                            class="btn secondary"
-                            href="contact.html"
-                        >
-                            Contact
-                        </a>
-
-                    </div>
-
-                </div>
-
+      <header class="hero">
+        <div class="container hero-inner">
+          <div class="hero-portrait">
+            <img src="potrait_1.jpeg" alt="Suman Poudel portrait" />
+          </div>
+          <div class="hero-copy">
+            <div class="subtitle">
+              M.S. Civil Engineering · Structural Engineering
             </div>
-        </header>
-
-
-        <!-- Research Focus Section -->
-        <section>
-            <div class="container">
-
-                <h2 class="section-title">
-                    Research Focus
-                </h2>
-
-                <p class="section-intro">
-                    My current work combines high-fidelity simulation,
-                    structural analysis, and machine learning for extreme
-                    hazard engineering.
-                </p>
-
-
-                <!-- Research Cards -->
-                <div class="grid three">
-
-                    <!-- Natural Hazards -->
-                    <div class="card">
-                        <h3>
-                            Natural Hazards
-                        </h3>
-
-                        <p>
-                            Structural response and infrastructure performance
-                            under extreme wind and other natural hazards.
-                        </p>
-                    </div>
-
-
-                    <!-- Computational Mechanics -->
-                    <div class="card">
-                        <h3>
-                            Computational Mechanics
-                        </h3>
-
-                        <p>
-                            Nonlinear finite-element and multi-scale analysis
-                            using tools such as LS-DYNA and OpenSees.
-                        </p>
-                    </div>
-
-
-                    <!-- Machine Learning -->
-                    <div class="card">
-                        <h3>
-                            Machine Learning
-                        </h3>
-
-                        <p>
-                            Surrogate modeling and deep learning approaches
-                            for accelerating engineering analysis.
-                        </p>
-                    </div>
-
-                </div>
-
-            </div>
-        </section>
-
-    </main>
-
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-
-            <strong>
-                Suman Poudel
-            </strong>
-
+            <h1>Suman Poudel, E.I.T</h1>
             <p>
-                Structural Engineering · Natural Hazards · Computational
-                Mechanics · Machine Learning
+              I am a civil engineering researcher at Oklahoma State University
+              working at the intersection of structural engineering, natural
+              hazards, computational mechanics, wind engineering, deep learning
+              and computer vision.
             </p>
-
-            <p class="small">
-                © <span id="year"></span> Suman Poudel.
-                All rights reserved.
+            <p>
+              My research focuses on understanding structural performance under
+              extreme hazards and developing computational and data-driven
+              methods for efficient engineering assessment.
             </p>
+            <div class="actions">
+              <a class="btn primary" href="research.html">
+                Explore My Research
+              </a>
+              <a class="btn primary" href="projects.html"> Projects </a>
+              <a class="btn secondary" href="publications.html">
+                View Publications
+              </a>
 
+              <a class="btn secondary" href="contact.html"> Contact </a>
+            </div>
+          </div>
         </div>
+      </header>
+      <section>
+        <div class="container">
+          <h2 class="section-title">Research Focus</h2>
+          <p class="section-intro">
+            My current work combines high-fidelity simulation, structural
+            analysis, deep learning and compuuter vision for extreme hazard
+            engineering.
+          </p>
+          <div class="grid three">
+            <div class="card">
+              <h3>Natural Hazards</h3>
+              <p>
+                Structural response and infrastructure performance under extreme
+                wind and other natural hazards.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Computational Mechanics</h3>
+              <p>
+                Nonlinear finite-element and multi-scale analysis using tools
+                such as LS-DYNA and OpenSees.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Deep Learning and Computer Vision</h3>
+              <p>
+                Developing classification and segmentation algorithms for hazard
+                mapping.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <strong> Suman Poudel </strong>
+        <p>
+          Structural Engineering · Natural Hazards · Computational Mechanics ·
+          Deep Learning · Computer Vision
+        </p>
+        <p class="small">
+          ©
+          <span id="year"> </span>
+          Suman Poudel. All rights reserved.
+        </p>
+      </div>
     </footer>
-
-
-    <!-- JavaScript -->
     <script>
-        function toggleMenu() {
-            document
-                .getElementById("menu")
-                .classList
-                .toggle("open");
-        }
-
-        document
-            .querySelectorAll(".menu a")
-            .forEach(a =>
-                a.addEventListener("click", () =>
-                    document
-                        .getElementById("menu")
-                        .classList
-                        .remove("open")
-                )
-            );
-
-        document.getElementById("year").textContent =
-            new Date().getFullYear();
+      function toggleMenu() {
+        document.getElementById("menu").classList.toggle("open");
+      }
+      document
+        .querySelectorAll(".menu a")
+        .forEach((a) =>
+          a.addEventListener("click", () =>
+            document.getElementById("menu").classList.remove("open"),
+          ),
+        );
+      document.getElementById("year").textContent = new Date().getFullYear();
     </script>
-
-</body>
-
+  </body>
 </html>
